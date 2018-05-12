@@ -1,0 +1,16 @@
+.button {
+  margin: 10px 0;
+  padding: 0.5em 1em;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: hotpink;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color linear 100ms;
+}
+
+.button:hover {
+  background-color: #333;
+}

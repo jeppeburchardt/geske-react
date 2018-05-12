@@ -1,0 +1,12 @@
+.question-text {
+  margin: 20px 0;
+  color: #333;
+  font-size: 22px;
+  line-height: 1.5em;
+}
+
+.question-options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

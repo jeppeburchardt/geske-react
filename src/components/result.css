@@ -1,0 +1,13 @@
+.result-text {
+  margin: 20px 0;
+  color: #333;
+  font-size: 22px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.result-emoji {
+  font-size: 120px;
+  text-align: center;
+  line-height: 2;
+}

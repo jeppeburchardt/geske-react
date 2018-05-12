@@ -1,9 +1,10 @@
 import React from 'react';
 import Question from './question';
 import Result from './result';
+import './quiz.css';
 
 const Quiz = ({ question, isQuizComplete, totalQuestions, onAnswer, result, onRestart }) => (
-  <div>
+  <div className='quiz'>
     {question && (
       <Question
         question={question}

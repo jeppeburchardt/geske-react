@@ -1,15 +1,17 @@
 import React from 'react';
+import Button from './button';
+import './question.css';
 
 const Question = ({ question, onAnswer }) => question ? (
-  <div>
-    <div>{question.text}</div>
-    <ul>
+  <div className="question">
+    <div className="question-text">{question.text}</div>
+    <ul className="question-options">
       {question.options.map(option => (
-        <div key={option.id}>
-          <button onClick={() => onAnswer(question.id, option.id)}>
+        <li key={option.id}>
+          <Button onClick={() => onAnswer(question.id, option.id)}>
             {option.text}
-          </button>
-        </div>
+          </Button>
+        </li>
       ))}
     </ul>
   </div>
