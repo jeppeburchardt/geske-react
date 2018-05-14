@@ -1,10 +1,10 @@
-export default state => Object.keys(state.answers).reduce(
+export default state => state.answers.reduce(
   (result, answer) => {
-    const option = state.answers[answer];
+    const { questionId, optionId } = answer;
     const isCorrect = state.questions.find(
-      q => q.id === answer
+      q => q.id === questionId
     ).options.find(
-      o => o.id === option
+      o => o.id === optionId
     ).correct;
 
     return result + (isCorrect ? 1 : 0);

@@ -1,15 +1,13 @@
-const initialState = {};
-
-const answers = (state = { ...initialState }, action) => {
-  console.log(action);
+const answers = (state = [], action) => {
   switch (action.type) {
     case 'STORE_ANSWER':
-      return {
-        ...state,
-        [action.payload.questionId]: action.payload.optionId,
-      };
+      const { questionId, optionId } = action.payload;
+      return [
+        ...state.filter(a => a.questionId !== questionId),
+        { questionId, optionId },
+      ];
     case 'RESTART_QUIZ':
-      return { };
+      return [];
     default:
       return state;
   }
