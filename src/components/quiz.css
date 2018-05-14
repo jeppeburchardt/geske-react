@@ -1,5 +1,5 @@
 .quiz {
-  margin: 80px auto;
+  margin: 20px auto;
   max-width: 560px;
   position: relative;
 }
@@ -7,8 +7,8 @@
 .quiz-slide,
 .quiz-zoom {
   position: absolute;
-  right: 0;
-  left: 0;
+  right: 40px;
+  left: 40px;
 }
 
 .quiz-slide-enter {

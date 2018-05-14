@@ -11,6 +11,12 @@
   transition: background-color linear 100ms;
 }
 
-.button:hover {
-  background-color: #333;
+.button:focus {
+  outline: none;
+}
+
+@media (any-hover: hover) {
+  .button:hover {
+    background-color: #333;
+  }
 }
